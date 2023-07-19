@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Délicat</title>
+    <link rel="stylesheet" href="order.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+                <h1>Délicat</h1>
+        </div>
+        <div class="linear"></div>
+    </header>
+    <main>
+        <div class="menufeed" id="menufeed">
+            <!-- menu renders here -->
+        </div>
+        <div class="orderinfo hidden" id="order">
+            <!-- Order renders here -->
+        </div>
+        <div class="payment-form hidden" id="payment-form-div">
+            <form id="payment-form">
+                <div class="close-btn">
+                 <i class="fas fa-times" id="close-icon" data-close="close-form"></i>
+                </div>
+                <h2>Enter card details</h2>
+                <input required 
+                    type="text" 
+                    name="name" 
+                    class="inputForm" 
+                    id="name" 
+                    placeholder="Enter your name" >
+
+                <input required 
+                    type="text" 
+                    minlength="16" 
+                    class="inputForm" 
+                    id="cardNumber" 
+                    name="creditcard" 
+                    placeholder="Enter card number"
+                    oninvalid="this.setCustomValidity('Credit Card must contain 16 digits')"
+                    oninput="this.setCustomValidity('')">
+
+                <input required 
+                    type="text" 
+                    min-length="3" 
+                    class="inputForm" 
+                    id="CVV" 
+                    name="cvv" 
+                    placeholder="Enter CVV" 
+                    oninvalid="this.setCustomValidity('CVV must contain atleast 3 digits')"
+                    oninput="this.setCustomValidity('')">
+
+                 <br><button class="submitform-btn" id="submitform-btn" type="submit">Pay</button>
+            </form>
+        </div>
+    </main>
+    <script type="module" src="./index.js"></script>
+</body>
+</html>

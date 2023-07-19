@@ -1,0 +1,414 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Cormorant Garamond', serif;
+}
+
+ 
+
+/* Header */
+
+header {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.374),
+        rgba(0, 0, 0, 0.287)
+    ), url(./images/background.jpg);
+    background-position: 5% 25%;
+    background-size: 130%;
+    height: 25vh;
+    color: white;
+}
+
+.header-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.linear {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 1vh;
+    background: linear-gradient(
+        90deg,
+        rgb(95, 95, 255), 
+        white,
+        rgb(255, 102, 102)
+    );
+    box-shadow: 0px 0px 3px black;
+}
+
+/* Typography */
+
+
+h1 {
+    padding-top: 5vh;
+    font-family: 'Sacramento', cursive;
+    margin-left: 20px;
+    font-size: 9vw;
+    text-shadow: 1px 1px 0px black;
+    padding-bottom: 0px;
+}
+
+span {
+    padding-bottom: 0px;
+}
+
+
+
+
+/* MENU */
+
+.menu {
+    width: 100%;
+    padding-top: 6vh;
+    margin: 0 auto;
+}
+
+img {
+    height: 40px;
+    width: 40px;
+}
+
+.inner-menu {
+    margin: 0 auto;
+    width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 0px 0px 2px white;
+}
+
+.name, .description {
+    margin-left: 10px;
+}
+
+.name {
+    font-size: 3vw;
+    font-family: italic;
+}
+
+.description {
+    font-size: 3vw;
+}
+
+
+.buy-info {
+    width: 6vw;
+    height: 4vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 0px;
+    padding: 0px 2px 4px 2px;
+    font-size: 2vw;
+    background-color: white;
+    box-shadow: 3px 3px 0px black;
+    border: 1px solid rgb(85, 85, 85);
+    border-right-color: rgb(169, 169, 169);
+    border-bottom-color: rgb(169, 169, 169);
+    font-weight: 500;
+    user-select: none;
+}
+
+.buy-info:hover, .complete-btn:hover, .submitform-btn:hover, .return-btn:hover{
+    box-shadow: 0px 0px 0px black;
+    background-color: white;
+    border: 1px solid black;
+    border-top-color: gray;
+    border-bottom-color: gray;
+    cursor: pointer;
+    transition: all 1s ease;
+}
+
+
+.baught{
+    background-color: white;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.purchase {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* YOUR ORDER */
+
+.order-layout {
+    margin: 0 auto;
+    display: flex;
+    width: 85%;
+    justify-content: space-between;
+    font-size: 3vw;
+}
+
+.liner {
+    height: 1px;
+    background: linear-gradient(
+        90deg,
+        transparent, 
+        black, 
+        transparent
+    );
+    width: 75vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.second {
+    margin-top: 5vh;
+}
+
+.orderinfo {
+    margin-top: 5vh;
+    text-align: center;
+}
+
+.order-window{
+    text-align: center;
+}
+
+.checkout-order-name-div {
+    justify-content: start;
+}
+
+.checkout-order-name-div, .remove-btn-div   {
+    width: 33%;
+    display: flex;
+}
+
+.remove-btn-div {
+    justify-content: end;
+}
+
+.your-order-title, .total-price {
+    font-size: 4vw;
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+    font-weight: 800;
+}
+
+.remove-btn, .complete-btn {
+    cursor: pointer;
+}
+
+.remove-btn {
+    width: 6vw;
+    height: 4vh;
+    font-size: 1vw;
+    border: 1px solid black;
+    border-left-color: gray;
+    border-right-color: gray;
+}
+
+.complete-btn, .return-btn {
+    margin-bottom: 5vh;
+    padding: 1vh 2vh 1vh 2vh;
+    font-size: 2vw;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 600;
+    background-color: white;
+    box-shadow: 3px 3px 0px black;
+    border: 1px solid rgb(85, 85, 85);
+    border-right-color: rgb(169, 169, 169);
+    border-bottom-color: rgb(169, 169, 169);
+}
+
+.return-btn {
+    width: 100px;
+    margin-top: 15px;
+    margin-bottom: 0px;
+}
+
+/* Payment form */
+
+.payment-form {
+    width: 55vw;
+    height: 70vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    border: 1px solid black;
+}
+
+.close-btn {
+    text-align: right;
+    align-self: right;
+    margin-right: 1vw;
+    cursor: pointer;
+}
+
+h2 {
+    font-size: 5vw;
+}
+
+.submitform-btn {
+    margin-top: 1vh;
+    margin-bottom: 2vh;
+    width: 13vw;
+    height: 6vh;
+    box-shadow: 3px 3px 0px black;
+    border: 1px solid rgb(85, 85, 85);
+    border-right-color: rgb(169, 169, 169);
+    border-bottom-color: rgb(169, 169, 169);
+    cursor: pointer;
+    font-size: 2vw;
+}
+
+.submitform-btn:hover {
+    border: 2px solid green;
+    border-top-color: rgb(191, 249, 191);
+    border-bottom-color: rgb(191, 249, 191);
+}
+
+.inputForm {
+    width: 50vw;
+    height: 10vh;
+    margin-top: 3vh;
+    border: 1px solid rgb(85, 85, 85);
+    border-right-color: rgb(169, 169, 169);
+    border-bottom-color: rgb(169, 169, 169);
+    font-size: 3vw
+}
+
+.hidden {
+    display: none;
+}
+
+.process-pay {
+    width: 250px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+.final-confirmation-div {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.thank-you-msg{
+    font-size: 4vw;
+}
+
+.full-name {
+    color: blue;
+}
+
+.french-flag {
+    width: 20%;
+    height: 20%;
+}
+
+.return-btn {
+    width: 10vw;
+    font-size: 2vw;
+    text-align: center;
+}
+
+
+
+/* RESPONSIVE */
+
+@media screen and (max-device-width: 700px) {
+    h1 {
+        margin-left: 0;
+        font-size: 10vh;
+        text-align: center;
+    }
+    
+    .name {
+        font-size: 6vw;
+    }
+
+    .buy-info {
+        width: 12vw;
+        height: 20px;
+        font-size: 4vw;
+    }
+    
+    .your-order-title {
+        font-size: 6vw;
+    }
+
+    .order-layout {
+        font-size: 4.5vw;
+    }
+
+    .remove-btn {
+        width: 45px;
+        height: 15px;
+        font-size: 10px;
+    }
+    
+    .complete-btn {
+        font-size: 4vw;
+    }
+
+    .total-price {
+        padding-top: 15px;
+        font-size: 25px;
+        padding-bottom: 15px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    .return-btn {
+        width: 25vw;
+        font-size: 4vw;
+    }
+
+    .french-flag {
+        width: 40%;
+    }
+
+    .payment-form {
+        height: 30vh;
+    }
+
+    .thank-you-msg{
+        font-size: 5vw;
+    }
+
+    .inputForm {
+        height: 3vh;
+        width: 65vw;
+    }
+
+    .payment-form {
+        height: 37vh;
+        width: 75vw;
+    }
+
+    .submitform-btn {
+        height: 4vh;
+        width: 18vw;
+        font-size: 4vw;
+        margin-top: 3vh;
+    }
+}
