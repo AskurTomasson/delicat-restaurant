@@ -52,7 +52,7 @@ h1 {
     font-family: 'Sacramento', cursive;
     margin-left: 20px;
     font-size: 9vw;
-    text-shadow: 1px 1px 0px black;
+    text-shadow: 3px 3px 0px black;
     padding-bottom: 0px;
 }
 
@@ -60,10 +60,25 @@ span {
     padding-bottom: 0px;
 }
 
+h2 {
+    font-size: 5vw;
+}
 
 
+/* BORDERS ON BUTTONS */
+
+.buy-info, .remove-btn, .complete-btn, .return-btn, .payment-form, .submitform-btn{ 
+    border: 4px solid rgb(76, 76, 76);
+    border-top-color: rgb(169, 169, 169);
+    border-left-color: rgb(169, 169, 169);
+}
 
 /* MENU */
+
+.food-icon {
+    width: 6vw;
+    height: 9vh;
+}
 
 .menu {
     width: 100%;
@@ -107,13 +122,10 @@ img {
     align-items: center;
     text-align: center;
     border-radius: 0px;
-    padding: 0px 2px 4px 2px;
+    padding: 0px 2px 8px 2px;
     font-size: 2vw;
     background-color: white;
-    box-shadow: 3px 3px 0px black;
-    border: 1px solid rgb(85, 85, 85);
-    border-right-color: rgb(169, 169, 169);
-    border-bottom-color: rgb(169, 169, 169);
+    box-shadow: 4px 4px 0px black;
     font-weight: 500;
     user-select: none;
 }
@@ -121,7 +133,7 @@ img {
 .buy-info:hover, .complete-btn:hover, .submitform-btn:hover, .return-btn:hover{
     box-shadow: 0px 0px 0px black;
     background-color: white;
-    border: 1px solid black;
+    border: 3px solid black;
     border-top-color: gray;
     border-bottom-color: gray;
     cursor: pointer;
@@ -207,9 +219,6 @@ img {
     width: 6vw;
     height: 4vh;
     font-size: 1vw;
-    border: 1px solid black;
-    border-left-color: gray;
-    border-right-color: gray;
 }
 
 .complete-btn, .return-btn {
@@ -219,10 +228,7 @@ img {
     font-family: 'Cormorant Garamond', serif;
     font-weight: 600;
     background-color: white;
-    box-shadow: 3px 3px 0px black;
-    border: 1px solid rgb(85, 85, 85);
-    border-right-color: rgb(169, 169, 169);
-    border-bottom-color: rgb(169, 169, 169);
+    box-shadow: 4px 4px 0px black;
 }
 
 .return-btn {
@@ -247,18 +253,13 @@ img {
     top: 0;
     bottom: 0;
     margin: auto;
-    border: 1px solid black;
 }
 
 .close-btn {
     text-align: right;
     align-self: right;
-    margin-right: 1vw;
+    margin-right: 2vw;
     cursor: pointer;
-}
-
-h2 {
-    font-size: 5vw;
 }
 
 .submitform-btn {
@@ -266,10 +267,7 @@ h2 {
     margin-bottom: 2vh;
     width: 13vw;
     height: 6vh;
-    box-shadow: 3px 3px 0px black;
-    border: 1px solid rgb(85, 85, 85);
-    border-right-color: rgb(169, 169, 169);
-    border-bottom-color: rgb(169, 169, 169);
+    box-shadow: 5px 5px 0px black;
     cursor: pointer;
     font-size: 2vw;
 }
@@ -284,7 +282,7 @@ h2 {
     width: 50vw;
     height: 10vh;
     margin-top: 3vh;
-    border: 1px solid rgb(85, 85, 85);
+    border: 2px solid rgb(85, 85, 85);
     border-right-color: rgb(169, 169, 169);
     border-bottom-color: rgb(169, 169, 169);
     font-size: 3vw
@@ -295,8 +293,8 @@ h2 {
 }
 
 .process-pay {
-    width: 250px;
-    height: 200px;
+    width: 85%;
+    height: 75%;
     margin: 0 auto;
 }
 
@@ -339,6 +337,11 @@ h2 {
         font-size: 10vh;
         text-align: center;
     }
+
+    .food-icon {
+        height: 4vh;
+        width: 8vw;
+    }
     
     .name {
         font-size: 6vw;
@@ -348,10 +351,15 @@ h2 {
         width: 12vw;
         height: 20px;
         font-size: 4vw;
+        padding-bottom: 4px;
     }
     
     .your-order-title {
         font-size: 6vw;
+    }
+
+    .remove-btn {
+        border: 1px solid black;
     }
 
     .order-layout {
@@ -410,5 +418,11 @@ h2 {
         width: 18vw;
         font-size: 4vw;
         margin-top: 3vh;
+    }
+
+    .buy-info, .complete-btn, .return-btn, .submitform-btn {
+        border: 2px solid rgb(85, 85, 85);
+        border-right-color: rgb(169, 169, 169);
+        border-bottom-color: rgb(169, 169, 169);
     }
 }

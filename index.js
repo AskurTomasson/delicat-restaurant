@@ -120,7 +120,7 @@ function getMenu() {
         menuHtml += `
         <div class="menu">
             <div class="inner-menu">
-                <img src="${food.icon}">
+                <img class="food-icon" src="${food.icon}">
                     <div class="purchase">
                         <div>
                             <p class="name">${food.name}</p>
